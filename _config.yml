@@ -48,9 +48,9 @@ email: hello@webjeda.com
 
 #facebook like box
 fb-like-box: yes
-fb-app-id: 549480635219583
-fb-page-url: https://www.facebook.com/webjeda/
-fb-page-title: webjeda
+fb-app-id:
+fb-page-url: https://www.facebook.com/Arthur-developer-1573153896163865/
+fb-page-title: Arthur-developer
 
 # Sass style
 sass:
