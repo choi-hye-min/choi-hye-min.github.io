@@ -33,7 +33,7 @@ paginate: 6
 paginate_path: /page:num/
 
 # Tracker
-analytics: UA-83979019-1
+analytics: UA-83979019-111
 
 # Comments
 disqus: yes
@@ -41,10 +41,10 @@ disqus-shortname: arthur-developer
 
 #social
 facebook: https://www.facebook.com/profile.php?id=100001745885436
-quora: http://quora.com/sharathdt
-twitter: http://twitter.com/@webjeda
-github: http://github.com/webjeda
-email: hello@webjeda.com
+#quora: http://quora.com/sharathdt
+#twitter: http://twitter.com/@webjeda
+github: https://choi-hye-min.github.io
+email: gogoke1@naver.com
 
 #facebook like box
 fb-like-box: yes
