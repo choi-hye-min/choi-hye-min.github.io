@@ -227,5 +227,9 @@ permalink: /about/
   </div>
 </div>
 
-<a class="github-button" href="https://github.com/choi-hye-min" data-style="mega" data-count-href="https://github.com/choi-hye-min/choi-hye-min.github.io" data-count-api="https://github.com/choi-hye-min/choi-hye-min.github.io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star arthur on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<div class="row">
+    <div class="text-right">
+        <a class="github-button" href="https://github.com/choi-hye-min" data-style="mega" data-count-href="https://github.com/choi-hye-min/choi-hye-min.github.io" data-count-api="https://github.com/choi-hye-min/choi-hye-min.github.io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star arthur on GitHub">Star</a>
+        <script async defer src="https://buttons.github.io/buttons.js"></script> 
+    </div>    
+</div>

@@ -61,3 +61,8 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
+# Custom Collection
+collections:
+  portfolio_post:
+    output: true
+    permalink: /:collection/:title
