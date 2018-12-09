@@ -126,7 +126,7 @@ permalink: /about/
     <div class="col-md-3 text-right">PHP</div>
     <div class="col-md-9">
       <div class="progress">
-          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
         </div>
     </div>
     </div>
@@ -135,7 +135,7 @@ permalink: /about/
       <div class="col-md-3 text-right">Java</div>
       <div class="col-md-9">
         <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
           </div>
       </div>
     </div>
@@ -144,7 +144,7 @@ permalink: /about/
       <div class="col-md-3 text-right">Python</div>
       <div class="col-md-9">
         <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
           </div>
       </div>
     </div>
@@ -153,7 +153,7 @@ permalink: /about/
       <div class="col-md-3 text-right">Go</div>
       <div class="col-md-9">
         <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
           </div>
       </div>
     </div>
@@ -171,7 +171,7 @@ permalink: /about/
       <div class="col-md-3 text-right">MySql</div>
       <div class="col-md-9">
         <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
           </div>
       </div>
     </div>
@@ -180,7 +180,7 @@ permalink: /about/
       <div class="col-md-3 text-right">C</div>
       <div class="col-md-9">
         <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
           </div>
       </div>
     </div>
