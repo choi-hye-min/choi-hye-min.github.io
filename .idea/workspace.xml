@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7ddaa23-c847-4f74-ba66-a43b0f6977fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_layouts/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/portfolio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2018-12-09-hello.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/portfoilo/image-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/portfoilo/pexels-photo-90807.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/post/pexels-photo-90807.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/post/welcome.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_portfolio_post/2016-06-13-pf00.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_portfolio_post/2016-06-13-pf00.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_portfolio_post/2016-06-13-pf01.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-05-07-documentation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-06-09-no-image.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-06-10-elements.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-06-12-usage.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-06-13-welcome-to-jekyll.markdown" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_sass/_bootstrap-readable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_bootstrap-readable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_layout.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-12-09-hello.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-12-09-hello.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-12-09-hello.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -69,17 +54,26 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="-163">
               <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_bootstrap-readable.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_bootstrap-readable.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/_bootstrap-readable.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="1486" column="14" selection-start-line="1486" selection-start-column="14" selection-end-line="1486" selection-end-column="14" />
+            <state relative-caret-position="245">
+              <caret line="4508" column="12" selection-start-line="4508" selection-start-column="12" selection-end-line="4508" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="42" column="13" selection-start-line="42" selection-end-line="42" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -134,6 +128,15 @@
       <find>meta</find>
       <find>shortcut icon</find>
       <find>blockquote</find>
+      <find>1px solid #eee</find>
+      <find>.navbar</find>
+      <find>padding: 10px</find>
+      <find>.navbar-default</find>
+      <find>navbar-brand</find>
+      <find>color: #4582ec</find>
+      <find>#4582ec</find>
+      <find>.navbar-nav &gt; li &gt; a</find>
+      <find>.navbar-brand</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/github_blog201</dir>
@@ -181,8 +184,9 @@
         <option value="$PROJECT_DIR$/_layouts/category.html" />
         <option value="$PROJECT_DIR$/_posts/2018-12-09-hello.md" />
         <option value="$PROJECT_DIR$/css/main.scss" />
-        <option value="$PROJECT_DIR$/_sass/_bootstrap-readable.scss" />
         <option value="$PROJECT_DIR$/_posts/2018-12-09-hello.markdown" />
+        <option value="$PROJECT_DIR$/_sass/_layout.scss" />
+        <option value="$PROJECT_DIR$/_sass/_bootstrap-readable.scss" />
       </list>
     </option>
   </component>
@@ -400,12 +404,12 @@
       <workItem from="1544189248039" duration="5036000" />
       <workItem from="1544199833752" duration="1787000" />
       <workItem from="1544201811587" duration="9953000" />
-      <workItem from="1544335599792" duration="8873000" />
+      <workItem from="1544335599792" duration="10819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25883000" />
+    <option name="totallyTimeSpent" value="27829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="988" extended-state="0" />
@@ -447,13 +451,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/disqus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="110" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/feed.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6604">
@@ -766,27 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/_syntax-highlighting.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/_bootstrap-readable.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="1486" column="14" selection-start-line="1486" selection-start-column="14" selection-end-line="1486" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_portfolio_post/2016-06-13-pf00.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -804,6 +780,34 @@
             <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_syntax-highlighting.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="42" column="13" selection-start-line="42" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_bootstrap-readable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="4508" column="12" selection-start-line="4508" selection-start-column="12" selection-end-line="4508" selection-end-column="12" />
         </state>
       </provider>
     </entry>
