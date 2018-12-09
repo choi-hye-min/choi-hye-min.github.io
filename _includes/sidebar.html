@@ -3,20 +3,25 @@
            {% if page.img %}
             <img width="600" src="{{site.baseurl}}/images/{{page.img}}" alt="{{page.title}}">
             {% else %}
-            <img width="600" src="{{site.baseurl}}/images/{{site.default-image}}" alt="webjeda">
+                {% if page.url == "/about/" %}
+                <img width="600" src="{{site.baseurl}}/images/myphoto.jpg" alt="">
+                {% else %}
+                <img width="600" src="{{site.baseurl}}/images/{{site.default-image}}" alt="">
+                {% endif %}
             {% endif %}
         </div>
-            
         
-        <div class="mt10 recent">
-            <h2>Recent articles</h2>        
+        <div class="mt10 recent text-center">
+            {% if page.url == "/about/" %}
+            <h5>고와도 내 코드 미워도 내 코드</h5>
+            {% else %}
+            <h2>Recent articles</h2>
+            {% endif %}
              <ul>
                 {% for post in site.related_posts limit:3 %}
-
                       <li>
-                      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small></p>
+                        <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small></p>
                       </li>
-
                 {% endfor %}
               </ul>
         </div>
@@ -26,5 +31,4 @@
         </div>
         {% endif %}
         <br>
-
 </div>

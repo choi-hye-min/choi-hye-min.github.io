@@ -2,7 +2,8 @@
 layout: post
 title: "안녕하세요? HelloWorld~처럼"
 date: 2018-12-09
-category: [hello]
+category: [잡담]
+tag: [hello]
 img: post/dribble_comp_800x600_.gif
 ---
 
