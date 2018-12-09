@@ -33,5 +33,199 @@ permalink: /about/
   </div>
 </div>
 
+<div class="page-header">
+  <h3>Development & Skill <small>개발 및 기술</small></h3>
+
+    <div class="row">
+      <div class="col-md-3 text-right">Web Back-end</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">Web Front-end</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">API</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+          </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-3 text-right">Algorithm</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">Security</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">DevOps</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">Linux</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+          </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-3 text-right">AWS</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">Git</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+          </div>
+      </div>
+    </div>
+  
+</div>
+
+<div class="page-header">
+  <h3>Language <small>언어</small></h3>
+  
+    <div class="row">
+    <div class="col-md-3 text-right">PHP</div>
+    <div class="col-md-9">
+      <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+        </div>
+    </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-3 text-right">Java</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">Python</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">Go</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">HTML+CSS+JS</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">MySql</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 text-right">C</div>
+      <div class="col-md-9">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+          </div>
+      </div>
+    </div>
+  
+</div>
+
+<div class="page-header">
+  <h3>Framework <small>프레임워크</small></h3>
+  
+  <div class="row">
+    <div class="col-md-3 text-right">Spring</div>
+    <div class="col-md-9">
+      <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 text-right">Codeigniter</div>
+    <div class="col-md-9">
+      <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 text-right">Flask</div>
+    <div class="col-md-9">
+      <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 text-right">Django</div>
+    <div class="col-md-9">
+      <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
 <a class="github-button" href="https://github.com/choi-hye-min" data-style="mega" data-count-href="https://github.com/choi-hye-min/choi-hye-min.github.io" data-count-api="https://github.com/choi-hye-min/choi-hye-min.github.io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star arthur on GitHub">Star</a>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
