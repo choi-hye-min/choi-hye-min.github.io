@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7ddaa23-c847-4f74-ba66-a43b0f6977fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/images/flake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/snowfall.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-12-22-post20181222.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-12-22-post20181222.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,8 +95,8 @@
       <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+            <state relative-caret-position="406">
+              <caret line="29" column="130" selection-start-line="29" selection-start-column="130" selection-end-line="29" selection-end-column="130" />
             </state>
           </provider>
         </entry>
@@ -225,6 +221,7 @@
     <option name="height" value="494" />
   </component>
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -429,7 +426,7 @@
       <workItem from="1544335599792" duration="11174000" />
       <workItem from="1544368052252" duration="3886000" />
       <workItem from="1544441498945" duration="222000" />
-      <workItem from="1545479473702" duration="10103000" />
+      <workItem from="1545479473702" duration="10823000" />
     </task>
     <task id="LOCAL-00001" summary="181222 post">
       <created>1545491681626</created>
@@ -438,11 +435,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545491681626</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="181222 post - snow.js">
+      <created>1545492656796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545492656796</updated>
+    </task>
+    <task id="LOCAL-00003" summary="181222 post - snow.js">
+      <created>1545492801503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545492801504</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42395000" />
+    <option name="totallyTimeSpent" value="43115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="987" extended-state="6" />
@@ -516,7 +527,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="181222 post" />
-    <option name="LAST_COMMIT_MESSAGE" value="181222 post" />
+    <MESSAGE value="181222 post - snow.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="181222 post - snow.js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_includes/disqus.html">
@@ -818,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+        <state relative-caret-position="406">
+          <caret line="29" column="130" selection-start-line="29" selection-start-column="130" selection-end-line="29" selection-end-column="130" />
         </state>
       </provider>
     </entry>
