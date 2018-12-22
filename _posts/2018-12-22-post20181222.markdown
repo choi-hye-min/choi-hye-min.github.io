@@ -158,5 +158,95 @@ public class PersonRequest {
 ~~~
 
 #### 실행결과
-여기서 주목해봐야할 값은 `Respon Status 201`로 성공했다는것
+여기서 주목해봐야할 값은 `Respon Status 201`로 성공했다는거 그리고 테스를 보다 쉽게 하기 위해서 들어온값 그대로 응답하였다.
 ![실행결과](https://monosnap.com/image/UObjGz6m64EhPf6fiFMcNX1QOUubHH.png)
+
+#### Validator Class
+좀더 세밀하게 유효성검사를 하고 싶을땐 따로 클래스를 만들어 `Validator`를 상속받아 구현해줄수 있다.  
+파일위치 : /src/main/java/com/example/demo/validator/PersonValidator.java
+```java
+public class PersonValidator implements Validator {
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return PersonRequest.class.isAssignableFrom(clazz);
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        PersonRequest personRequest = (PersonRequest) target;
+
+        // TODO: 유효성검사
+
+        //errors.reject("arthur", "이곳에걸렷구나");
+    }
+}
+```
+`boolean supports(Class<?> clazz)`는 유효성을 체크할려는 클래스에 대한 허용여부 True로 될시 아래의 `void validate(Object target, Errors errors)`로 진입하게 된다.  
+또한 유효성 체크시 적절하게 `errors.reject()`를 이용하여 컨트롤러에게 에러사실을 전달할수있다.
+
+#### Fail Request Json
+일부러 `categoryType`을 enum 범위에 없는 값을 입력하여 유효성 체크를 해보자
+```json
+{
+	"personParam":{
+		"categoryType": "BIKE"
+	},
+	"person": {
+		"name": "dasda",
+		"age": 2
+	}
+}
+```
+![Alt text](https://monosnap.com/image/A8xODuHfUWEqcxFtLxBCBPqFJBEM2g.png)
+컨트롤러의 유효성 `bindingResult.hasErrors()`에 걸려 에러로그를 콘솔에 출력하고 있다.
+
+#### 나의 Validator Class 컨트롤러에 적용하기
+![Alt text](https://monosnap.com/image/jupOxxDv1I939N1JnWvYFJOXwkKfyD.png)
+내가만든 유효성클래스를 컨트롤러에 적용하기 위해선 `new PersonValidator().validate(personRequest, bindingResult);` 호출해주면된다.
+
+#### API Test Case
+자 이제 최종적으로 테스트케이스를 작성해보자.  
+`MockMvc` 테스트를 하기위해서 의존성 주입을 한후 request객체를 만들어 build해준다.
+```java
+@RunWith(JUnitPlatform.class)
+@WebMvcTest(Controller.class)
+public class PersonApiTest {
+
+    @Autowired
+    private MockMvc mvc;
+
+    @Test
+    @DisplayName("API MOCK Test")
+    public void personAPI테스트() throws Exception {
+
+        Person person = Person.builder()
+                .age(32)
+                .name("arthur")
+                .build();
+
+        PersonParam personParam = PersonParam.builder()
+                .categoryType(CategoryType.CAR)
+                .testLong(1L)
+                .build();
+
+        PersonRequest personRequest = PersonRequest.builder()
+                .person(person)
+                .personParam(personParam)
+                .build();
+
+        ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
+        String json = ow.writeValueAsString(personRequest);
+
+        mvc.perform(
+                post("/")
+                        .contentType(MediaType.APPLICATION_JSON_UTF8)
+                        .content(json)
+        ).andExpect(status().isCreated())
+        .andDo(print());
+    }
+}
+```
+![Alt text](https://monosnap.com/image/0Iqhg6hbtjW75VXlTdWNbwUVnnr1Lw.png)
+정상적으로 `pass` 된것을 확인했다. 응답결과값도 우리가 원하는 대로 넘어온걸 확인했다.
+
+> 앞으로 controller, service등 validation을 적절하게 이용하여 잘 쓸수 있을거 같다.<br>또한 추가로 요청할때 enum에 없는 값들이 넘어왔을때 처리방법을 알아보겠다.
