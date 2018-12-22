@@ -1,28 +1,35 @@
 ---
 layout: compress
---- 
+---
 
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+{% include header.html %}
 
-    <div class="container">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<div class="container">
+    <div class="wrapper">
+    {{ content }}
     </div>
+</div>
 
-    {% include footer.html %}
-    
+{% include footer.html %}
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
- {% if site.analytics %}{% include analytics.html %}{% endif %}
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
+<script src="{{site.baseurl}}/js/snowfall.js"></script>
+{% if site.analytics %}{% include analytics.html %}{% endif %}
+
+<script>
+    $( document ).ready(function() {
+        snowFall.snow(document.body, {image :"{{site.baseurl}}/images/flake.png", minSize: 10, maxSize:32});
+    });
+</script>
+
+</body>
 
 </html>

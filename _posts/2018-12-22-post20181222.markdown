@@ -156,4 +156,7 @@ public class PersonRequest {
 	}
 }
 ~~~
+
+#### 실행결과
+여기서 주목해봐야할 값은 `Respon Status 201`로 성공했다는것
 ![실행결과](https://monosnap.com/image/UObjGz6m64EhPf6fiFMcNX1QOUubHH.png)
