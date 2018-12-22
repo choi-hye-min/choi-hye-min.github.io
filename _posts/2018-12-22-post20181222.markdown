@@ -1,0 +1,159 @@
+---
+layout: post
+title: "Spirng Validation 유효성체크"
+date: 2018-12-09
+category: [spring]
+tag: [validator]
+img: post/bean-validation-with-spring-mvc.png
+---
+
+> 스프링에서 API를 만들때 어떤형태로 요청이 들어올지 우리는 모른다. 그렇게 때문에 들어오는 요청의 에대해서 유효성체크(validation)을 할필요성이 있다.
+
+#### 선언적인 방식의 유효성 검사기
+- Spring validator
+- Hibernate validator
+
+- @Valid : [`JSR-303`](https://beanvalidation.org/1.0/spec/) 에 의해 만들어진 어노테이션 (현재는 `JSR-380`까지 나온상태)
+- @Validated : spring framework 의 만들어진 어노테이션
+
+#### Package Tree
+패키지 구조는 아래와 같다  
+자료는 [저장소 바로가기](https://github.com/choi-hye-min/springValidatorTest) 에서 다운받을수 있다.
+
+> STAR도 한번씩 눌러주시길 (굽신..)  
+
+```
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── example
+│   │           └── demo
+│   │               ├── Controller.java
+│   │               ├── DemoApplication.java
+│   │               ├── domain
+│   │               │   └── Person.java
+│   │               ├── enums
+│   │               │   └── CategoryType.java
+│   │               ├── params
+│   │               │   └── PersonParam.java
+│   │               ├── request
+│   │               │   └── PersonRequest.java
+│   │               ├── service
+│   │               │   └── PersonService.java
+│   │               └── validator
+│   │                   └── PersonValidator.java
+│   └── resources
+│       ├── application.properties
+│       ├── static
+│       └── templates
+└── test
+    └── java
+        └── com
+            └── example
+                └── demo
+                    ├── DemoApplicationTests.java
+                    ├── PersonApiTest.java
+                    └── PersonTest.java
+```
+#### Controller
+`/src/main/java/com/example/demo/Controller.java`를 살펴보면 POST method로 지정되어있으며 `json`형태로 입력을 받고 있다. 또한 `@Valid`를 이용하여 요청이 들어오는 입력값에 대해서 검증을 실시하고
+`BindingResult`필드를 통하여 `error`에대한 결과가 컨트롤러로 넘겨받는다. 필드를 이용하여 유효성실패에대한 `적절한 분기처리`를 할수있다.  
+
+~~~java
+@RestController
+public class Controller {
+
+    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public PersonRequest getPerson(@RequestBody @Valid PersonRequest personRequest, BindingResult bindingResult){
+
+        new PersonValidator().validate(personRequest, bindingResult);
+        if(bindingResult.hasErrors()){
+            bindingResult.getAllErrors()
+                    .stream()
+                    .forEach(s -> {
+                        log.error("[{}] {}", s.getCode(), s.getDefaultMessage());
+                    });
+
+            return null;
+        }
+
+        return personRequest;
+    }
+}
+~~~
+
+#### PersonRequest
+`Person.class`의 형태는 아래처럼 되어있으며 annotation으로 값이 없을때 그리고 최소값을 가져야하는 유효성 및 메세지를 지정하였다.
+
+~~~java
+@Data
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class Person {
+
+    @NotEmpty(message = "이름을 입력해주세요.")
+    private String name;
+
+    @Min(value = 1, message = "나이는 0 이상입니다. ")
+    private int age;
+
+    @Builder
+    public Person(@NotEmpty(message = "이름을 입력해주세요.") String name, @Min(value = 1, message = "나이는 0 이상입니다. ") int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+~~~ 
+```java
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Getter
+public class PersonParam {
+
+    private Long testLong;
+
+    @NotNull(message = "정확한 카테고리값을 입력해주세요.")
+    private CategoryType categoryType;
+
+    @Builder
+    public PersonParam(Long testLong, @NotNull(message = "정확한 카테고리값을 입력해주세요.") CategoryType categoryType) {
+        this.testLong = testLong;
+        this.categoryType = categoryType;
+    }
+}
+
+```
+#### Request 최종
+위의 객체들을 합쳐서 `PersonRequest`에 몰아 넣어 각각 필드에 `@Valid`를 적용하여 각 객체속의 검증도 하도록 적용하였다.
+```java
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Getter
+public class PersonRequest {
+
+    @Valid
+    private PersonParam personParam;
+
+    @Valid
+    private Person person;
+
+    @Builder
+    public PersonRequest(@Valid PersonParam personParam, @Valid Person person) {
+        this.personParam = personParam;
+        this.person = person;
+    }
+}
+```
+
+#### Request Json Body
+일단 정상적인 케이스를 시도해보겠다.
+~~~json
+{
+	"personParam":{
+		"categoryType": "CAR"
+	},
+	"person": {
+		"name": "dasda",
+		"age": 2
+	}
+}
+~~~
+![실행결과](https://monosnap.com/image/UObjGz6m64EhPf6fiFMcNX1QOUubHH.png)
