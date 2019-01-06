@@ -1282,12 +1282,17 @@ h3,
 h4,
 .h4 {
   font-size: 20px;
-  border-left: 10px solid #d60015;
+  border-left: 7px solid #d60015;
   padding-left: 5px;
 }
 h5,
 .h5 {
   font-size: 16px;
+  border-left: 5px solid #b30012;
+  padding-left: 5px;
+}
+h4::first-letter,h5::first-letter{
+  color: #d60015;
 }
 h6,
 .h6 {
