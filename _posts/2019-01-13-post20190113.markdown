@@ -1,0 +1,122 @@
+---
+layout: post
+title: "Spring filter 와 interceptor 차이와 이해"
+date: 2019-01-13
+category: [spring]
+tag: [filter,interceptor]
+img: post/20190113/filter_interceptor.png
+---
+> 스프링을 공부하다보니 Filter와 interceptor에 대해서 궁금한점이 많아졌다 두개의 차이점과 실행되는 방식 그리고 실행되는 시점에대해서도 그래서 오늘은 필터와 인터셉터에 대해서 알아보는 글을 써볼까 한다.
+
+#### 개념
+- Filter : `HTTP 요청과 응답을 변경할 수 있는 재사용가능한 코드`
+    - 체인형태로 여러개의 Filter를 연결할수있다.
+- Interceptor : 컨트롤러에 `들어오는 요청 및 응답을 가로채어` 원하는 형태로 변경할수있다. (사실 시점만 다르고 하는역할은 비슷한거 같다.)
+
+<div class="text-center">
+    <img src="/images/post/20190113/fig58-1.gif">
+    <p>Filter Rquest Response</p>
+</div>
+
+#### 등록시점
+- Filter 와 Interceptor의 실행시점이 다르다
+    - Filter는 `WebA pplication`에서 등록
+    - interceptor는 `Spring Context`에서 등록  
+
+<div class="text-center">
+    <img src="/images/post/20190113/requestLifecycle.jpeg">
+    <p>Request Life Cycle</p>
+</div>
+
+##### 설정위치
+- Filter : 스프링부트에서는 web.xml 이 더 이상 사용되지 않아 서블릿이나 필터를 org.springframework.boot.web.servlet 의 RegistrationBean 을 통해 등록해야합니다.
+- Interceptor : spring-servlet.xml
+
+#### 처리시점
+- Filter는 `Dispatcher servlet`의 앞단에서 정보를 처리
+- Interceptor는 `Spring Framework` 자체적으로 제공하는 기능
+
+#### Filter 사용예
+일단 필터로 Controller에 들어오는 요청을 잡아 Response의 Header를 추가하여 보내주는 샘플을 만들어보겠다.  
+필터 설정을 빈으로 등록하고 적용되어야할 url을 지정할수도 있다.
+```java
+package com.example.demo.config;
+
+import com.example.demo.filter.HelloFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import javax.servlet.Filter;
+
+@Configuration
+public class FilterConfig {
+
+    @Bean
+    public FilterRegistrationBean filterRegistrationBean(){
+         FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+
+         registrationBean.setFilter(helloFilter());
+         registrationBean.addUrlPatterns("/test/*");
+
+         return registrationBean;
+    }
+
+    @Bean(name = "helloFilter")
+    public Filter helloFilter(){
+        return new HelloFilter();
+    }
+}
+```
+
+실제로 필터로직이 들어가는부분 헤더를 추가해주고 있다.
+```java
+package com.example.demo.filter;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@Component
+@Slf4j
+public class HelloFilter implements Filter {
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest req = (HttpServletRequest) request;
+        HttpServletResponse res = (HttpServletResponse) response;
+
+        res.setHeader("Hello", "test");
+
+        chain.doFilter(req, res);
+
+        log.info("Starting a transaction for req : {}", req.getRequestURI());
+        log.info("Committing a transaction for req : {}", req.getRequestURI());
+    }
+
+    @Override
+    public void destroy() {
+
+    }
+}
+```
+여기서 `void doFilter(...)`를 보면되는데 `res.setHeader(...)`를 이용해서 헤더의 값을 추가하는 작업을 볼수가 있다.  
+그리고 바로 아래에선 들어온 request의 주소를 출력하고있다.
+
+```java
+2019-01-13 17:34:59.197  INFO 42027 --- [nio-8100-exec-1] com.example.demo.filter.HelloFilter      : Starting a transaction for req : /test
+2019-01-13 17:34:59.197  INFO 42027 --- [nio-8100-exec-1] com.example.demo.filter.HelloFilter      : Committing a transaction for req : /test
+``` 
+
+![Alt text](https://monosnap.com/image/dYzhtHuSpKPpvZwi5FonwC58APgwjz.png)
+
+정상적으로 헤더값이 추가된것과 uri도 잘 노출되어 나온다. 이처럼 필터를 이용하여 요청에대한 처리와 응답에 대한 처리를 적절하게 가공하여 반환해줄수 있는것을 확인했다.
