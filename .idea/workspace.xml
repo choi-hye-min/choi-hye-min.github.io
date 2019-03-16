@@ -2,32 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7ddaa23-c847-4f74-ba66-a43b0f6977fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-01-13-post20190113.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/post/20190113/fig58-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/post/20190113/filter_interceptor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/post/20190113/requestLifecycle.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2019-03-17-post20190317.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2019-01-13-post20190113.markdown" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-01-13-post20190113.markdown">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-post20190317.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="386">
-                <caret line="117" column="4" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="439">
+                <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
                 <folding>
-                  <element signature="imports" expanded="true" />
-                  <element signature="e#689#690#0" expanded="true" />
-                  <element signature="e#729#730#0" expanded="true" />
-                  <element signature="imports" expanded="true" />
+                  <element signature="e#0#26#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -35,12 +29,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019-01-03-post20190103.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-01-03-post20190103.markdown">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-01-16-post20190116.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="384">
-                <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="68" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-233">
+                <caret line="45" column="5" selection-start-line="45" selection-end-line="45" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -96,7 +90,7 @@
       <replace>Interceptor의</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$USER_HOME$/github_blog201</dir>
+      <dir>$PROJECT_DIR$/../github_blog201</dir>
       <dir>$PROJECT_DIR$/.sass-cache</dir>
       <dir>$PROJECT_DIR$/_sass</dir>
       <dir>$PROJECT_DIR$</dir>
@@ -106,18 +100,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/IdeaProjects/uploadTest" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_includes/disqus.html" />
-        <option value="$USER_HOME$/Pictures/Built by-webjeda-blue.svg" />
+        <option value="$PROJECT_DIR$/../Pictures/Built by-webjeda-blue.svg" />
         <option value="$PROJECT_DIR$/images/facebook.svg" />
         <option value="$PROJECT_DIR$/images/developer_arthur.svg" />
         <option value="$PROJECT_DIR$/_posts/2018-05-07-test.md" />
@@ -146,7 +133,6 @@
         <option value="$PROJECT_DIR$/css/main.scss" />
         <option value="$PROJECT_DIR$/_sass/_syntax-custom.scss" />
         <option value="$PROJECT_DIR$/_sass/_layout.scss" />
-        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_posts/2018-12-22-post20181222.markdown" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -154,24 +140,17 @@
         <option value="$PROJECT_DIR$/_sass/_bootstrap-readable.scss" />
         <option value="$PROJECT_DIR$/_posts/2019-01-03-post20190103.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-01-13-post20190113.markdown" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-03-17-post20190317.md" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="987" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -192,43 +171,22 @@
             <path>
               <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="github_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="_sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-              <item name="20190103" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-              <item name="20190113" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -238,6 +196,7 @@
     <property name="SearchEverywhereHistoryKey" value="gem&#9;FILE&#9;file:///Users/arthur/github_blog/Gemfile" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552755943927" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
@@ -249,56 +208,38 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts/backup" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/images/post/20190113" />
       <recent name="$PROJECT_DIR$/images/ico" />
       <recent name="$PROJECT_DIR$/images/post/20190103" />
       <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/backup" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/safe_yaml-1.0.4" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-feed-0.11.0" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/addressable-2.5.2" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/public_suffix-3.0.3" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rouge-3.3.0" />
         <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/mercenary-0.3.6" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.3" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/rb-fsevent-0.10.3" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/jekyll-seo-tag-2.5.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/http_parser.rb-0.6.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/jekyll-paginate-1.1.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/em-websocket-0.5.1" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/forwardable-extended-2.6.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/colorator-1.1.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/jekyll-feed-0.11.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/addressable-2.5.2" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/public_suffix-3.0.3" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/rouge-3.3.0" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/http_parser.rb-0.6.0" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/mercenary-0.3.6" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/pathutil-0.16.2" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/rb-inotify-0.9.10" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/safe_yaml-1.0.4" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-3.8.5/lib/theme_template" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-paginate-1.1.0" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.3" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rb-fsevent-0.10.3" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-seo-tag-2.5.0" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/pathutil-0.16.2" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rb-inotify-0.9.10" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/em-websocket-0.5.1" />
-        <option value="$PROJECT_DIR$/_vendor/bundle/ruby/2.5.0/gems/jekyll-3.8.5/lib/theme_template" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/forwardable-extended-2.6.0" />
         <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/colorator-1.1.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/addressable-2.5.2" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/em-websocket-0.5.1" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rouge-3.3.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-feed-0.11.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/public_suffix-3.0.3" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/forwardable-extended-2.6.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/pathutil-0.16.2" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/safe_yaml-1.0.4" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-paginate-1.1.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-seo-tag-2.5.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/http_parser.rb-0.6.0" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/jekyll-3.8.5/lib/theme_template" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rb-inotify-0.9.10" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rb-fsevent-0.10.3" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.3" />
       </list>
     </option>
   </component>
@@ -317,6 +258,9 @@
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="start" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -327,44 +271,25 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start.sh" />
       <option name="PARAMETERS" value="" />
       <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -386,6 +311,7 @@
       <workItem from="1545479473702" duration="14766000" />
       <workItem from="1546521138801" duration="14496000" />
       <workItem from="1547366535907" duration="2639000" />
+      <workItem from="1552751191071" duration="4638000" />
     </task>
     <task id="LOCAL-00001" summary="181222 post">
       <created>1545491681626</created>
@@ -433,78 +359,78 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64193000" />
+    <option name="totallyTimeSpent" value="68988000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="987" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32921347" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28988764" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17399268" />
-      <window_info anchor="bottom" id="SonarLint" order="12" />
-      <window_info anchor="bottom" id="Tail" order="0" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17582418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tail" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28988764" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32997763" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Tail" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Message" order="1" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17032968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Run" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Tail" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28988764" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="181222 post" />
@@ -515,26 +441,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="181222 css p word-break" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2018-05-07-test.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/2018-06-07-test22.md" />
-    <entry file="file://$PROJECT_DIR$/.sass-cache/aeac1d28969910f69bd478b7c26a92be5e1723c4/_custom.scssc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jekyll-paginate.gemspec" />
     <entry file="file://$PROJECT_DIR$/_site/test22/index.html" />
     <entry file="file://$PROJECT_DIR$/LICENCE.md" />
     <entry file="file://$PROJECT_DIR$/contact.md" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -553,26 +463,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/portfolio_post/2016-06-13-pf00.html" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_portfolio_post/2016-06-13-pf01.markdown" />
     <entry file="file://$PROJECT_DIR$/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
       <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="70">
             <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -696,34 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -779,36 +654,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-12-22-post20181222.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-12-22-post20181222.markdown" />
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-03-post20190103.markdown" />
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-13-post20190113.markdown" />
+    <entry file="file://$PROJECT_DIR$/images/webjeda-logo-big.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-16-post20190116.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="64">
-            <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-233">
+            <caret line="45" column="5" selection-start-line="45" selection-end-line="45" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-03-post20190103.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-03-17-post20190317.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="384">
-            <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="68" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-13-post20190113.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="386">
-            <caret line="117" column="4" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="439">
+            <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
             <folding>
-              <element signature="imports" expanded="true" />
-              <element signature="e#689#690#0" expanded="true" />
-              <element signature="e#729#730#0" expanded="true" />
-              <element signature="imports" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
