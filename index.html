@@ -1,10 +1,14 @@
 ---
 layout: default
 ---
-
+<style>
+    .main-content {
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+</style>
 <div class="home">
- 
-  
     <div class="row pack">
 
         {% for post in paginator.posts %}   
@@ -15,12 +19,14 @@ layout: default
                       {% if post.img %}
                       <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
                       {% else %}
-                      <img width="100%" src="{{site.baseurl}}/images/webjeda-logo-big.jpg" alt="{{site.title}}">
+                      <div class="main-content">
+                          {{post.title}}
+                      </div>
                       {% endif %}
                   </div>
-                  
+
                   <div class="panel-body">
-                    <h3 class="panel-title pull-left">{{ post.title | truncate: 25 }}</h3><span class="post-meta pull-right"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
+                    <h3 class="panel-title pull-left">{{ post.title | truncate: 25 }}</h3><span class="post-meta pull-right"><small>{{ post.date | date: "%Y. %m. %d" }}</small></span>
                   </div>
                   
                   <div class="panel-body"><small>

@@ -68,3 +68,10 @@ collections:
   portfolio_post:
     output: true
     permalink: /:collection/:title
+
+reloader:
+    error_file: nil
+    host: Jekyll::Site#config["host"]
+    port: 35729
+
+livereload: true

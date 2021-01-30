@@ -6,14 +6,14 @@
                 {% if page.url == "/about/" %}
                 <img width="600" src="{{site.baseurl}}/images/myphoto.jpg" alt="">
                 {% else %}
-                <img width="600" src="{{site.baseurl}}/images/{{site.default-image}}" alt="">
+                <img class="lazyload" width="600" src="{{site.baseurl}}/images/{{site.default-image}}" loading="lazy" alt="">
                 {% endif %}
             {% endif %}
         </div>
         
         <div class="mt10 recent text-center">
             {% if page.url == "/about/" %}
-            <h5>고와도 내 코드 미워도 내 코드</h5>
+            <h5>발전하는 내가 될수있도록</h5>
             {% else %}
             <h2>Recent articles</h2>
             {% endif %}
