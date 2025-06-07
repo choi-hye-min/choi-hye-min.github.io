@@ -20,7 +20,7 @@ layout: default
                       <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
                       {% else %}
                       <div class="main-content">
-                          {{post.title}}
+                          <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{post.title}}</div>
                       </div>
                       {% endif %}
                   </div>
