@@ -1,0 +1,22 @@
+/* 블로그 테이블 가독성 향상용 스타일 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  font-size: 1.05em;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  text-align: left;
+}
+th {
+  background-color: rgb(206, 206, 206);
+  font-weight: 700;
+}
+tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+tr:hover {
+  background-color: #f1f7ff;
+}
