@@ -44,6 +44,11 @@ layout: default
     <div class="col-md-4">  </div>
     <div class="col-md-4">
         {% if paginator.total_pages > 1 %}
+          {% if paginator.page == 1 %}
+            <p style="text-align: center;">{{ paginator.page }} / {{ paginator.total_pages }}</p>
+          {% else %}
+            <p style="text-align: center;">{{ paginator.page }} / {{ paginator.total_pages }}</p>
+          {% endif %}
         <ul class="pagination">
           {% if paginator.previous_page %}
             <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
@@ -55,7 +60,7 @@ layout: default
             {% if page == paginator.page %}
               <li class="active"><span><em>{{ page }}</em></span></li>
             {% elsif page == 1 %}
-            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+            <li><a href="/">{{ page }}</a></li>
             {% else %}
             <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
             {% endif %}
