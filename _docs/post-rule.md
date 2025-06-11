@@ -9,6 +9,8 @@
 - {index}는 같은날짜에 동일한 포스트가 여러개 있을경우 1씩 증가되어야한다
 
 ## Front-matter 예시
+- tags 항목엔 특수기호 포함되면 안됨
+
 ---
 layout: post
 title: "포스트 제목"

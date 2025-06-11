@@ -6,6 +6,10 @@ layout: default
         width: 100%;
         background-color: black;
         color: white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-break: break-word;
     }
 </style>
 <div class="home">
@@ -15,12 +19,12 @@ layout: default
             <div class="col-md-4 card">
              <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">    
                 <div class="panel panel-default">
-                  <div class="img-box">
+                  <div class="img-box" style="position: relative;">
                       {% if post.img %}
-                      <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
+                      <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                       {% else %}
-                      <div class="main-content">
-                          <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{post.title}}</div>
+                      <div class="main-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        {{post.title}}
                       </div>
                       {% endif %}
                   </div>
