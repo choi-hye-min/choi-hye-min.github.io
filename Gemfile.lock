@@ -3,6 +3,10 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    asciidoctor (2.0.23)
+    asciidoctor-diagram (3.0.0)
+      asciidoctor (>= 1.5.7, < 3.x)
+      rexml
     base64 (0.3.0)
     bigdecimal (3.2.2)
     colorator (1.1.0)
@@ -87,6 +91,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  asciidoctor-diagram
   jekyll (~> 4.3)
   jekyll-feed (~> 0.17)
   jekyll-paginate (~> 1.1)
