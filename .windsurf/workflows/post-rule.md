@@ -12,20 +12,14 @@ AI 또는 자동화 시스템이 기술블로그 포스트를 작성할 때 일�
 
 ## 사전 준비 및 주제 선정
 1. **기존 포스트의 주제 파악**
-    - `_posts/*.md` 파일의 `tags` 필드를 모두 조사한다.
-    - 이미 다루어진 주제(태그)와 아직 다루지 않은 주제를 목록화한다.
-    - 예시(이미 다루어진 태그):
-      - springboot, lock, 동기화, 분산락, 동시성, 초보자, os, 운영체제, process, thread, memory, filesystem, scheduling, algorithm, data-structure, 코딩테스트, design-pattern, oop, 객체지향, network, osi, tcpip, http, https, ssl, tls, 보안, rest, api, 웹개발, git, github, cli, 버전관리, oauth2, 인증, 인가, security, intellij, vscode, gitbash, terminal, 개발환경, cloud, aws, gcp, azure, 인프라, database, rdb, nosql, sql, 데이터, cicd, githubactions, devops, 배포자동화, 실전, kotlin, 테스트, TDD, 단위테스트, 통합테스트, mock, coverage, junit, kotest, spring, webflux, databuffer, publish, autoconnect, cache, refcount, restful, api설계, bestpractice, frontend, html, css, javascript, docker, container, devops, 실습, coroutine, scope, GlobalScope, CoroutineScope, MainScope, viewModelScope, lifecycleScope, java, java8, java21, feature, samplecode, mdc, logging, mvc, errorhandling, springboot3, mongodb, customrepository, query, springdata, annotation, EnableCaching, 캐시, Redis, Caffeine, Armeria, gRPC, ContextPropagation, 코틀린, Java, 언어비교, 마이그레이션, Resilience4j, CircuitBreaker, 장애 대응, 마이크로서비스, Thrift, RPC, 프로토콜, 시스템 설계, 코루틴, async, armeira, Stub, ErrorHandling, 백엔드, proto, 실전팁, build.gradle.kts, Gradle, Kotlin DSL, 빌드, 비교 등.
-    - **아직 다루지 않은 주제**(예시):
-      - 최신 IT 트렌드, Spring boot3, kotlin, java, 개발자 커리어 관리 등 기존 태그에 없는 새로운 주제를 선정한다.
+    - `_posts/현재년도/*.md` 파일의 `tags`,`title` 필드를 모두 조사한다
 2. **새로운 포스트 주제 선정**
-    - 위에서 파악한 '아직 다루지 않은 주제' 중 하나를 선정한다.
-    - 선정 기준: 기존 포스트와 중복되지 않으며, 초보자에게 도움이 될 만한 주제.
-
+    - 위에서 파악한 내용과 관련된 새로운 주제를 선정한다
+3. 주제 선정시 프롬프트에 확인이후 실행해야함
 ---
 
 ## 파일 작성 규칙
-1. **파일 위치**: `_posts` 폴더에 작성한다.
+1. **파일 위치**: `_posts/{YYYY}` 폴더에 작성한다.
 2. **파일명**: `YYYY-MM-DD-postYYYYMMDD-{index}.md` 형식
     - YYYY-MM-DD: 작성 날짜
     - {index}: 같은 날짜 내 여러 포스트일 경우 1씩 증가
@@ -53,6 +47,7 @@ AI 또는 자동화 시스템이 기술블로그 포스트를 작성할 때 일�
     - 샘플코드 제외 10,000자 이상 반드시 작성 (AI는 글자 수를 체크해야 함)
     - 초보자를 대상으로 하여 명확하고 쉽게 설명
     - 코드 예시는 가능하면 Kotlin 사용
+      - 코드 예시사용시 config class부터 시작하여 전체 코드를 포함하여 예시할것
     - ####, ##### 등으로 계층적 구조 구분
     - 코드블록, 이미지, 표 등 다양한 마크다운 기능 활용 가능
     - 강조 문구는 `문구` 형태로 작성
@@ -80,11 +75,10 @@ AI 또는 자동화 시스템이 기술블로그 포스트를 작성할 때 일�
 ## 체크리스트 (AI용)
 - [ ] 파일명, 위치, Front-matter 규칙 준수
 - [ ] tags 중복/미사용 주제 확인 및 선정
-- [ ] 본문 10,000자 이상 (샘플코드 제외)
+- [ ] 본문 10,000자 이상 (샘플코드 제외) 반드시 글자수 체크할것
 - [ ] 마크다운 문법 오류 없음
 - [ ] 제목 규칙 준수
 - [ ] 결론/도움말 포함
 - [ ] 레퍼런스 링크/자료 포함
 
 ---
-
