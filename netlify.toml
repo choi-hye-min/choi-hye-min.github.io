@@ -1,0 +1,9 @@
+[build]
+  publish = "_site"
+  command = "bundle exec jekyll build"
+
+[dev]
+  command = "bundle exec jekyll serve --livereload"
+
+[build.environment]
+  JEKYLL_ENV = "production"
