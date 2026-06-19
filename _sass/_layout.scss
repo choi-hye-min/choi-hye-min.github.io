@@ -524,8 +524,8 @@ article.post {
     width: min(100%, 720px);
     margin-left: 0;
     color: #2e3330;
-    font-size: 17.5px;
-    line-height: 1.82;
+    font-size: 16px;
+    line-height: 1.78;
     word-break: keep-all;
 }
 
@@ -586,7 +586,7 @@ article.post {
     border-left: 3px solid $brand-color;
     color: $grey-color-dark;
     background: rgba($brand-color, 0.055);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .post-content blockquote > :last-child {
@@ -657,6 +657,32 @@ article.post {
     user-select: none;
 }
 
+.post-content .mermaid-diagram {
+    margin: 2em 0;
+    padding: 24px;
+    overflow-x: auto;
+    border: 1px solid $grey-color-light;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+}
+
+.post-content .mermaid-diagram svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.post-content .mermaid-error {
+    color: $grey-color-dark;
+    background: #f5f3ee;
+    font-family: $mono-font-family;
+    font-size: 13px;
+    text-align: left;
+    white-space: pre;
+}
+
 .post-content pre code {
     padding: 0;
     color: inherit;
@@ -664,23 +690,28 @@ article.post {
 }
 
 .post-content table {
-    display: block;
+    display: table;
     width: 100%;
-    overflow-x: auto;
     border-collapse: collapse;
-    font-size: 15px;
+    table-layout: fixed;
+    font-size: 13px;
+    line-height: 1.55;
 }
 
 .post-content th,
 .post-content td {
-    min-width: 120px;
-    padding: 10px 12px;
+    min-width: 0;
+    padding: 9px 11px;
     border: 1px solid $grey-color-light;
     text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
 }
 
 .post-content th {
     background: #efefe9;
+    font-weight: 700;
 }
 
 .post-content img {
@@ -1430,8 +1461,8 @@ mark,
     }
 
     .post-content {
-        font-size: 17px;
-        line-height: 1.8;
+        font-size: 16px;
+        line-height: 1.78;
         word-break: normal;
     }
 
@@ -1452,9 +1483,26 @@ mark,
         font-size: 12.5px;
     }
 
+    .post-content table {
+        display: block;
+        overflow-x: auto;
+        table-layout: auto;
+        font-size: 12.5px;
+    }
+
+    .post-content th,
+    .post-content td {
+        min-width: 110px;
+        padding: 8px 9px;
+    }
+
     .code-line-numbers {
         padding: 16px 9px;
         font-size: 12.5px;
+    }
+
+    .post-content .mermaid-diagram {
+        padding: 14px;
     }
 
     .post-navigation {

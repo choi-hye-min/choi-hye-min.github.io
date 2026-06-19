@@ -6,6 +6,25 @@
     var headings = Array.prototype.slice.call(article.querySelectorAll('h2, h3'));
     var tocTargets = document.querySelectorAll('.toc-list');
 
+    article.querySelectorAll('pre > code.language-mermaid').forEach(function (code) {
+        var pre = code.parentElement;
+        var replacement = pre;
+        var parent = pre.parentElement;
+
+        if (parent.classList.contains('highlight') && parent.parentElement.classList.contains('highlighter-rouge')) {
+            replacement = parent.parentElement;
+        } else if (parent.classList.contains('highlighter-rouge')) {
+            replacement = parent;
+        }
+
+        var diagram = document.createElement('div');
+        diagram.className = 'mermaid mermaid-diagram';
+        diagram.setAttribute('role', 'img');
+        diagram.setAttribute('aria-label', '포스트 다이어그램');
+        diagram.textContent = code.textContent;
+        replacement.parentNode.replaceChild(diagram, replacement);
+    });
+
     article.querySelectorAll('pre > code').forEach(function (code) {
         var pre = code.parentElement;
         if (pre.parentElement.classList.contains('code-block-wrap')) return;
