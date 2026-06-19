@@ -1,243 +1,145 @@
 ---
 layout: page
 title: About
-date: 2018-12-08 12:05:00 +0530
+section: Backend Developer
+description: Kotlin과 Java 기반 백엔드 시스템과 AI Agent의 실무 활용을 고민하고 기록합니다.
 permalink: /about/
 ---
-<p>
-    <small>
-    알고싶은게 너무나 많은 개발자 <strong>"아서"</strong> 소개 올립니다. (<a target="_blank" href="https://namu.wiki/w/내%20친구%20아서">내친구아서</a> 주인공과 닮은 이유로..별명이됨)
-    <br>
-    주로 <mark>BackEND</mark>중심으로 개발을 해왔으며 <kbd>PHP</kbd> <kbd>Java</kbd> <kbd>Kotlin</kbd> <kbd>Python</kbd> <kbd>Go</kbd>를 주로 사용하며 다양한 과제에 노출시켜 경험과 성장을 위해 최선을 다하고 있습니다.
-    <br>
-    현재는 <mark>Spring</mark>에 빠져 Core, JVM을 비롯해서 열심히 공부중이며 개발자로서 직접 개발을 하면서 알게되었거나 문제점을 극복하는 과정을 포스팅에 남겨야 겠다고 판단이 되어 시작하게되었습니다.    
-    </small>
-</p>
-
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Biography</h3>
-  </div>
-  <div class="panel-body">  
-        <ol>
-            <li>닉네임 : Arthur(아서)</li>
-            <li>생년/혈액형 : 87년 O형</li>
-            <li>거주지 : 서울</li>
-            <li>직업 : 백엔드개발자</li>
-            <li>관심분야 : MSA, AI</li>
-            <li>취미 : 맛집가기, 컴퓨터게임하기, 보드, 수영</li>
-            <li>좋아하는것 : 삼겹살(고기), 동물</li>
-            <li>싫어하는것 : 향이강한것(깻잎,고수..), 벌레</li>
-        </ol>
-  </div>
-</div>
-
-<div class="page-header">
-  <h3>Development & Skill <small>개발 및 기술</small></h3>
-
-    <div class="row">
-      <div class="col-md-3 text-right">Web Back-end</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">Web Front-end</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">API</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-          </div>
-      </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-md-3 text-right">Algorithm</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">Security</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">DevOps</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">Linux</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-          </div>
-      </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-md-3 text-right">AWS</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">Git</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-          </div>
-      </div>
-    </div>
-  
-</div>
-
-<div class="page-header">
-  <h3>Language <small>언어</small></h3>
-
-  <div class="row">
-      <div class="col-md-3 text-right">Kotlin</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-          </div>
-      </div>
-    </div>
-  
-<div class="row">
-      <div class="col-md-3 text-right">Java</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-3 text-right">PHP</div>
-    <div class="col-md-9">
-      <div class="progress">
-          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+<div class="about-profile">
+    <div class="about-intro">
+        <p class="about-role">Backend Engineer · Arthur</p>
+        <h2>복잡한 요구사항을<br>명확한 시스템으로 만듭니다.</h2>
+        <p class="about-lead">
+            Kotlin과 Java를 중심으로 견고한 API와 확장 가능한 백엔드 구조를 설계합니다.
+            동작하는 코드를 넘어, 변경하기 쉽고 운영 중에 이해할 수 있는 시스템을 만드는 데 관심이 있습니다.
+            최근에는 AI Agent를 실무 개발 흐름에 연결해 반복 작업을 줄이고 더 나은 의사결정을 돕는 방법을 실험하고 있습니다.
+        </p>
+        <div class="about-actions">
+            <a class="about-primary-link" href="https://github.com/choi-hye-min" target="_blank" rel="noopener noreferrer">GitHub 보기 <span aria-hidden="true">↗</span></a>
+            <a href="mailto:{{ site.email }}">이메일 보내기 <span aria-hidden="true">→</span></a>
         </div>
     </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">Python</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">Go</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">HTML+CSS+JS</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">MySql</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-          </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3 text-right">C</div>
-      <div class="col-md-9">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-          </div>
-      </div>
-    </div>
-  
+
+    <dl class="about-summary">
+        <div>
+            <dt>Focus</dt>
+            <dd>Backend Architecture<br>API &amp; Distributed Systems</dd>
+        </div>
+        <div>
+            <dt>Primary</dt>
+            <dd>Kotlin · Java<br>Spring Ecosystem</dd>
+        </div>
+        <div>
+            <dt>Interested in</dt>
+            <dd>AI Agents · MSA<br>Reactive Systems</dd>
+        </div>
+    </dl>
 </div>
 
-<div class="page-header">
-  <h3>Framework <small>프레임워크</small></h3>
-  
-  <div class="row">
-    <div class="col-md-3 text-right">Spring</div>
-    <div class="col-md-9">
-      <div class="progress">
-          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
-        </div>
+<section class="about-section" aria-labelledby="expertise-title">
+    <div class="about-section-heading">
+        <p class="section-label">Expertise</p>
+        <h2 id="expertise-title">집중하는 문제</h2>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-3 text-right">Codeigniter</div>
-    <div class="col-md-9">
-      <div class="progress">
-          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-        </div>
+    <div class="about-card-grid">
+        <article class="about-card">
+            <span>01</span>
+            <h3>Architecture &amp; API</h3>
+            <p>헥사고날·클린 아키텍처의 경계를 실무 코드에 적용하고, REST와 gRPC API가 안전하게 진화할 수 있는 구조를 고민합니다.</p>
+        </article>
+        <article class="about-card">
+            <span>02</span>
+            <h3>Reactive &amp; Messaging</h3>
+            <p>Spring WebFlux와 Kafka를 활용해 비동기 흐름을 설계하고, 예외 처리와 재시도처럼 분산 환경에서 중요한 실패 경로를 다룹니다.</p>
+        </article>
+        <article class="about-card">
+            <span>03</span>
+            <h3>Reliability &amp; Testing</h3>
+            <p>테스트 가능한 설계, 일관된 로깅, 장애 격리와 복구 전략을 통해 배포 이후에도 이해하고 신뢰할 수 있는 시스템을 지향합니다.</p>
+        </article>
+        <article class="about-card">
+            <span>04</span>
+            <h3>AI Agents &amp; Automation</h3>
+            <p>AI Agent를 개발·운영 워크플로에 연결하고, 도구 호출과 반복 작업 자동화가 실무 생산성과 결과의 품질을 어떻게 높일 수 있는지 검증합니다.</p>
+        </article>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-3 text-right">Flask</div>
-    <div class="col-md-9">
-      <div class="progress">
-          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-        </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-3 text-right">Django</div>
-    <div class="col-md-9">
-      <div class="progress">
-          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-        </div>
-    </div>
-  </div>
-</div>
+</section>
 
-<div class="row">
-    <div class="text-right">
-        <a class="github-button" href="https://github.com/choi-hye-min" data-style="mega" data-count-href="https://github.com/choi-hye-min/choi-hye-min.github.io" data-count-api="https://github.com/choi-hye-min/choi-hye-min.github.io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star arthur on GitHub">Star</a>
-        <script async defer src="https://buttons.github.io/buttons.js"></script> 
-    </div>    
-</div>
+<section class="about-section about-principles" aria-labelledby="principles-title">
+    <div class="about-section-heading">
+        <p class="section-label">Principles</p>
+        <h2 id="principles-title">일하는 방식</h2>
+    </div>
+    <ol>
+        <li>
+            <strong>문제와 경계를 먼저 정의합니다.</strong>
+            <p>기술을 선택하기 전에 해결할 문제, 책임의 경계, 실패 조건을 명확히 합니다.</p>
+        </li>
+        <li>
+            <strong>단순하게 시작하고 근거를 갖고 확장합니다.</strong>
+            <p>불필요한 추상화를 줄이고, 측정 가능한 요구와 변화에 맞춰 구조를 발전시킵니다.</p>
+        </li>
+        <li>
+            <strong>배운 내용을 다시 사용할 수 있게 기록합니다.</strong>
+            <p>문제의 맥락과 선택의 이유를 문서화해 개인의 경험을 팀과 다음 작업의 자산으로 만듭니다.</p>
+        </li>
+    </ol>
+</section>
+
+<section class="about-section" aria-labelledby="stack-title">
+    <div class="about-section-heading">
+        <p class="section-label">Technology</p>
+        <h2 id="stack-title">기술 스택</h2>
+    </div>
+    <div class="about-stack">
+        <div>
+            <h3>Core</h3>
+            <p>Kotlin · Java · Spring Boot · Spring WebFlux</p>
+        </div>
+        <div>
+            <h3>Data &amp; Messaging</h3>
+            <p>MongoDB · R2DBC · Kafka · MySQL</p>
+        </div>
+        <div>
+            <h3>API &amp; Architecture</h3>
+            <p>REST · gRPC · Armeria · Hexagonal Architecture</p>
+        </div>
+        <div>
+            <h3>Platform &amp; Tools</h3>
+            <p>AWS · Linux · Git · Gradle</p>
+        </div>
+        <div>
+            <h3>AI &amp; Automation</h3>
+            <p>AI Agents · LLM Applications · Tool Integration · Workflow Automation</p>
+        </div>
+        <div>
+            <h3>Additional Languages</h3>
+            <p>Python · Go · PHP</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-section" aria-labelledby="writing-title">
+    <div class="about-section-heading about-writing-heading">
+        <div>
+            <p class="section-label">Recent Writing</p>
+            <h2 id="writing-title">최근 기록</h2>
+        </div>
+        <a href="{{ site.baseurl }}/">모든 글 보기 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="about-writing-list">
+        {% for post in site.posts limit:3 %}
+        <article>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y. %m. %d" }}</time>
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="about-contact" aria-labelledby="contact-title">
+    <p class="section-label">Contact</p>
+    <h2 id="contact-title">좋은 시스템과 배움을 함께 나누고 싶습니다.</h2>
+    <p>백엔드 개발, 아키텍처, 기술적인 아이디어에 관한 이야기를 환영합니다.</p>
+    <a href="mailto:{{ site.email }}">{{ site.email }} <span aria-hidden="true">→</span></a>
+</section>

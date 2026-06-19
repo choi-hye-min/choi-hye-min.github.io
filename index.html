@@ -4,6 +4,8 @@ layout: default
 <main class="home" id="main-content">
     {% if paginator.page == 1 %}
     {% assign featured_post = paginator.posts | first %}
+    <section class="featured-hero">
+    <canvas class="particle-network" aria-hidden="true"></canvas>
     <div class="featured-grid">
         <section class="featured-post" aria-labelledby="featured-title">
             <p class="section-label">Latest post</p>
@@ -36,6 +38,7 @@ layout: default
             </div>
         </aside>
     </div>
+    </section>
     {% endif %}
 
     <section class="post-index" aria-labelledby="post-index-title">
@@ -85,3 +88,6 @@ layout: default
     </nav>
     {% endif %}
 </main>
+{% if paginator.page == 1 %}
+<script src="{{ site.baseurl }}/js/particle-network.js"></script>
+{% endif %}
