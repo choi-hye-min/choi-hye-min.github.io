@@ -59,6 +59,21 @@ sass:
 plugins: 
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Post authoring defaults used by jekyll-compose.
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: post
+      categories: []
+      tags: []
+    posts:
+      layout: post
+      categories: []
+      tags: []
 
 category_dir: category/
 tag_dir: tag/

@@ -43,13 +43,19 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-compose (0.12.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.12.2)
@@ -95,8 +101,11 @@ PLATFORMS
 DEPENDENCIES
   asciidoctor-diagram
   jekyll (~> 4.3)
+  jekyll-compose (~> 0.12)
   jekyll-feed (~> 0.17)
   jekyll-paginate (~> 1.1)
+  jekyll-redirect-from (~> 0.16)
+  jekyll-sitemap (~> 1.4)
   logger
   minima (~> 2.5)
   tzinfo-data
