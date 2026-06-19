@@ -1,40 +1,30 @@
 <header class="site-header">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{site.baseurl}}/">
-                    <span class="brand-mark">A</span>
-                    <span>{{site.title}}</span>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{site.baseurl}}/tags/">Tags</a></li>
-                    <li><a href="{{site.baseurl}}/about/">About</a></li>
-                    <li><a href="{{site.baseurl}}/portfolio/">Portfolio</a></li>
-                    <li class="nav-status"><span><i></i> online</span></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">More <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a target="_blank" href="#">Project</a></li>
-                            <li><a href="#">Download</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a target="_blank" href="#">link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+    <div class="site-nav">
+        <a class="site-brand" href="{{ site.baseurl }}/" aria-label="{{ site.title }} 홈">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span>{{ site.title }}</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">메뉴 열기</span>
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="primary-navigation" class="primary-navigation" aria-label="주요 메뉴">
+            <a href="{{ site.baseurl }}/">Posts</a>
+            <a href="{{ site.baseurl }}/tags/">Tags</a>
+            <a href="{{ site.baseurl }}/about/">About</a>
+            <a href="{{ site.baseurl }}/search/">Search</a>
+        </nav>
+    </div>
 </header>
+<script>
+    (function () {
+        var button = document.querySelector('.nav-toggle');
+        var navigation = document.querySelector('.primary-navigation');
+        if (!button || !navigation) return;
+        button.addEventListener('click', function () {
+            var isOpen = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!isOpen));
+            navigation.classList.toggle('is-open', !isOpen);
+        });
+    }());
+</script>

@@ -1,24 +1,22 @@
-$base-font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $mono-font-family: "JetBrains Mono", Consolas, "Liberation Mono", monospace;
-$base-font-size:   15px;
+$base-font-size: 16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$small-font-size: 14px;
+$base-line-height: 1.7;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #e7edf7;
-$background-color: #060914;
-$brand-color:      #69e4ff;
+$text-color: #252927;
+$background-color: #f7f6f1;
+$brand-color: #087f6b;
+$grey-color: #69716d;
+$grey-color-light: #dfe3de;
+$grey-color-dark: #343a37;
+$accent-color: #0f9d83;
+$danger-color: #b94b55;
+$surface-color: #ffffff;
 
-$grey-color:       #8f9bb3;
-$grey-color-light: #233044;
-$grey-color-dark:  #0d1324;
-$accent-color:     #8dff9a;
-$danger-color:     #ff6b9a;
-$surface-color:    rgba(12, 18, 34, 0.78);
-
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$content-width: 1120px;
+$on-palm: 600px;
+$on-laptop: 900px;

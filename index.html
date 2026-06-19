@@ -1,89 +1,87 @@
 ---
 layout: default
 ---
-<div class="home">
-    <section class="home-hero">
-        <div class="terminal-hero-panel">
-            <div class="terminal-titlebar">
-                <span class="terminal-dot dot-red"></span>
-                <span class="terminal-dot dot-yellow"></span>
-                <span class="terminal-dot dot-green"></span>
-                <span class="terminal-path">~/arthur/blog</span>
-                <span class="terminal-signal">LIVE</span>
+<main class="home" id="main-content">
+    {% if paginator.page == 1 %}
+    {% assign featured_post = paginator.posts | first %}
+    <div class="featured-grid">
+        <section class="featured-post" aria-labelledby="featured-title">
+            <p class="section-label">Latest post</p>
+            <h1 id="featured-title">
+                <a href="{{ featured_post.url | prepend: site.baseurl }}">{{ featured_post.title }}</a>
+            </h1>
+            <p class="featured-excerpt">{{ featured_post.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
+            <div class="post-summary-meta">
+                <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%Y. %m. %d" }}</time>
+                {% for tag in featured_post.tags limit:3 %}
+                <a class="tag-chip" href="{{ site.baseurl }}/tags/#tag-{{ tag | url_encode }}">{{ tag }}</a>
+                {% endfor %}
             </div>
-            <div class="terminal-hero-body">
-                <p class="hero-kicker"><span class="prompt-mark">$</span> boot backend notes --architecture --troubleshooting</p>
-                <h1>기록으로 정리하는 개발과 문제 해결<span class="terminal-cursor"></span></h1>
-                <p class="hero-copy">백엔드 개발, 아키텍처 고민, 오류 해결 과정, 실무에서 배운 패턴을 차분히 정리하는 기술 블로그입니다.</p>
-                <div class="terminal-log" aria-hidden="true">
-                    <span>[00:01] render pipeline online</span>
-                    <span>[00:02] posts indexed</span>
-                    <span>[00:03] reader surface active</span>
+            <a class="text-link" href="{{ featured_post.url | prepend: site.baseurl }}">글 읽기 <span aria-hidden="true">→</span></a>
+        </section>
+
+        <aside class="featured-discovery" aria-labelledby="discovery-title">
+            <p class="section-label">Explore</p>
+            <h2 id="discovery-title">다른 글도 찾아보세요</h2>
+            <p>{{ site.posts | size }}개의 기술 기록을 주제와 키워드로 탐색할 수 있습니다.</p>
+            <nav aria-label="글 탐색">
+                <a href="{{ site.baseurl }}/search/">글 검색 <span aria-hidden="true">→</span></a>
+                <a href="{{ site.baseurl }}/tags/">모든 태그 <span aria-hidden="true">→</span></a>
+            </nav>
+            <div class="discovery-tags" aria-label="태그 미리보기">
+                {% assign preview_tags = site.tags | sort %}
+                {% for tag in preview_tags limit:6 %}
+                <a href="{{ site.baseurl }}/tags/#tag-{{ tag | first | url_encode }}">{{ tag | first }}</a>
+                {% endfor %}
+            </div>
+        </aside>
+    </div>
+    {% endif %}
+
+    <section class="post-index" aria-labelledby="post-index-title">
+        <div class="section-heading">
+            <div>
+                <p class="section-label">Writing</p>
+                <h2 id="post-index-title">{% if paginator.page == 1 %}최신 글{% else %}글 목록{% endif %}</h2>
+            </div>
+            <a class="text-link" href="{{ site.baseurl }}/tags/">주제별로 보기</a>
+        </div>
+
+        <div class="post-list">
+            {% for post in paginator.posts %}
+            {% if paginator.page != 1 or forloop.first == false %}
+            <article class="post-list-item">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y. %m. %d" }}</time>
+                <div class="post-list-copy">
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+                    {% if post.tags.size > 0 %}
+                    <div class="post-list-tags" aria-label="태그">
+                        {% for tag in post.tags limit:3 %}
+                        <a class="tag-chip" href="{{ site.baseurl }}/tags/#tag-{{ tag | url_encode }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </div>
-            </div>
+            </article>
+            {% endif %}
+            {% endfor %}
         </div>
     </section>
 
-    <div class="row pack">
-
-        {% for post in paginator.posts %}   
-            <div class="col-md-4 card">
-             <a href="{{ post.url | prepend: site.baseurl }}" class="index-anchor">    
-                <div class="panel panel-default">
-                  <div class="img-box">
-                      {% if post.img %}
-                      <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
-                      {% else %}
-                      <div class="main-content">
-                        <span>{{post.title}}</span>
-                      </div>
-                      {% endif %}
-                  </div>
-
-                  <div class="panel-body">
-                    <h3 class="panel-title pull-left">{{ post.title | truncate: 25 }}</h3><span class="post-meta pull-right"><small>{{ post.date | date: "%Y. %m. %d" }}</small></span>
-                  </div>
-                  
-                  <div class="panel-body"><small>
-                    {{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</small>
-                  </div>
-                </div>
-                </a>
-            </div>
-        
-          {% endfor %}
-
-    </div> 
-    
-<div class="row page-nav">
-    <div class="col-md-12">
-        {% if paginator.total_pages > 1 %}
-        <p class="page-count">{{ paginator.page }} / {{ paginator.total_pages }}</p>
-        <ul class="pagination">
-          {% if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-          {% else %}
-            <li><span>&laquo; Prev</span></li>
-          {% endif %}
-
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <li class="active"><span><em>{{ page }}</em></span></li>
-            {% elsif page == 1 %}
-            <li><a href="/">{{ page }}</a></li>
-            {% else %}
-            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-            {% endif %}
-          {% endfor %}
-
-          {% if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-          {% else %}
-            <li><span >Next &raquo;</span></li>
-          {% endif %}
-          </ul>
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination-wrap" aria-label="글 목록 페이지">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← 이전</a>
+        {% else %}
+        <span aria-disabled="true">← 이전</span>
         {% endif %}
-
-    </div>
-</div>
-</div>
+        <span class="page-count">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 →</a>
+        {% else %}
+        <span aria-disabled="true">다음 →</span>
+        {% endif %}
+    </nav>
+    {% endif %}
+</main>

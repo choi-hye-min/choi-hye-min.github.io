@@ -1,63 +1,18 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 {% include head.html %}
-
 <body>
-<div class="site-ambient" aria-hidden="true">
-    <span class="ambient-line ambient-line-a"></span>
-    <span class="ambient-line ambient-line-b"></span>
-    <span class="ambient-node ambient-node-a"></span>
-    <span class="ambient-node ambient-node-b"></span>
-    <span class="terminal-rain rain-a">git status --short · bundle exec jekyll serve · rg --files · deploy --watch ·</span>
-    <span class="terminal-rain rain-b">while true; do render && verify; done · ssh arthur@blog · tail -f notes.log ·</span>
-    <span class="terminal-rain rain-c">HTTP 200 /page4/ · lint ok · feed generated · posts indexed · cache warm ·</span>
-    <span class="code-particle particle-a">{ }</span>
-    <span class="code-particle particle-b">&lt;/&gt;</span>
-    <span class="code-particle particle-c">git</span>
-    <span class="code-particle particle-d">API</span>
-    <span class="code-particle particle-e">SQL</span>
-    <span class="code-particle particle-f">fn()</span>
-    <span class="code-particle particle-g">200</span>
-    <span class="code-particle particle-h">async</span>
-    <span class="code-particle particle-i">JVM</span>
-    <span class="code-particle particle-j">log</span>
-</div>
-
+<a class="skip-link" href="#main-content">본문 바로가기</a>
 {% include header.html %}
 
-<div class="container">
-    <div class="wrapper">
+<div class="site-container">
     {{ content }}
-    </div>
 </div>
 
 {% include footer.html %}
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
 {% if site.analytics %}{% include analytics.html %}{% endif %}
-
-<script>
-    $( document ).ready(function() {
-        // Image lazy loading
-        if ('loading' in HTMLImageElement.prototype) {
-            const images = document.querySelectorAll('img[loading="lazy"]');
-            images.forEach(img => {
-                img.src = img.dataset.src;
-            });
-        } else {
-            // Dynamically import the LazySizes library
-            const script = document.createElement('script');
-            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
-            document.body.appendChild(script);
-        }
-    });
-</script>
-
 </body>
-
 </html>

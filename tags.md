@@ -1,31 +1,36 @@
 ---
 layout: page
 title: Tags
-date: 2018-12-08 12:05:00 +0530
+section: Explore
 permalink: /tags/
 ---
-<link rel="stylesheet" href="{{site.baseurl}}/css/tags.css">
-<ul class="tag-cloud">
-{% for tag in site.tags %}
-  <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-    <a href="#{{ tag | first | slugize }}">
-      {{ tag | first }}
-    </a> &nbsp;&nbsp;
-  </span>
-{% endfor %}
-</ul>
+<p class="page-intro">관심 있는 주제를 골라 관련 글을 모아보세요.</p>
 
-<div id="archives">
-{% for tag in site.tags %}
-  <div class="archive-group">
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <h3 id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
-    {% for post in site.tags[tag_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
+<nav class="tag-directory" aria-label="태그 목록">
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+    <a href="#tag-{{ tag | first | url_encode }}">
+        {{ tag | first }} <span>{{ tag | last | size }}</span>
+    </a>
+{% endfor %}
+</nav>
+
+<div class="tag-archives">
+{% for tag in sorted_tags %}
+    {% assign tag_name = tag | first %}
+    <section class="tag-archive" id="tag-{{ tag_name | url_encode }}">
+        <div class="tag-archive-heading">
+            <h2>{{ tag_name }}</h2>
+            <span>{{ tag | last | size }} posts</span>
+        </div>
+        <div class="archive-list">
+        {% for post in site.tags[tag_name] %}
+            <article>
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y. %m. %d" }}</time>
+                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            </article>
+        {% endfor %}
+        </div>
+    </section>
 {% endfor %}
 </div>
