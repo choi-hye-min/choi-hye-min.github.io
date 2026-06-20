@@ -102,6 +102,30 @@ chmod +x start.sh
 http://127.0.0.1:4000/
 ```
 
+## 새 포스트 작성
+
+프로젝트 루트에서 제목과 영문 slug를 전달해 새 포스트를 생성합니다.
+
+```bash
+ruby scripts/new_post.rb "LangGraph 핵심 용어와 동작 구조 정리" langgraph-core-concepts
+```
+
+포스트는 작성일에 따라 `_posts/<연도>/<날짜>-<slug>.md` 경로에 생성됩니다.
+
+```text
+_posts/2026/2026-06-20-langgraph-core-concepts.md
+```
+
+slug에는 소문자 영문, 숫자, 하이픈만 사용할 수 있습니다. 주제 분류는 디렉터리 대신
+생성된 front matter의 `categories`와 `tags`에 작성합니다. 포스트 전용 이미지는 다음
+경로에 두는 것을 권장합니다.
+
+```text
+images/posts/langgraph-core-concepts/
+```
+
+기존 포스트의 파일명은 이전 URL을 유지하기 위해 변경하지 않습니다.
+
 ## 빌드 확인
 
 서버 실행 전 정적 빌드만 확인하려면 아래 명령어를 사용합니다.
