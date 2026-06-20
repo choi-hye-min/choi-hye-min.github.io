@@ -74,6 +74,10 @@ a:focus {
     text-decoration: none;
 }
 
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
 :focus-visible {
     outline: 3px solid rgba($brand-color, 0.28);
     outline-offset: 3px;
