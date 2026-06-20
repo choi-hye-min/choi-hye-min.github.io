@@ -1,0 +1,4 @@
+interface:
+  display_name: "기술 블로그 포스트 작성"
+  short_description: "프로젝트 규칙에 맞춰 기술 포스트를 작성하고 검증합니다"
+  default_prompt: "$write-tech-blog-post를 사용하여 주제를 조사하고 프로젝트 규칙에 맞는 기술 블로그 포스트를 작성해 주세요."
