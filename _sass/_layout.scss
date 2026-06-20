@@ -841,18 +841,28 @@ article.post {
 }
 
 .toc-list a {
+    padding: 4px 8px;
+    border-left: 3px solid transparent;
+    border-radius: 0 4px 4px 0;
     color: $grey-color;
     font-size: 12px;
     line-height: 1.5;
 }
 
 .toc-list a:hover,
-.toc-list a:focus {
+.toc-list a:focus,
+.toc-list a.is-active {
     color: $brand-color;
 }
 
+.toc-list a.is-active {
+    border-left-color: $brand-color;
+    font-weight: 700;
+    background: rgba($brand-color, 0.1);
+}
+
 .toc-list .toc-subitem {
-    padding-left: 12px;
+    padding-left: 20px;
 }
 
 .mobile-toc {

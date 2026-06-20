@@ -45,6 +45,6 @@ layout: default
         {% endif %}
     </nav>
 </main>
-<script src="{{ site.baseurl }}/js/post.js"></script>
+<script src="{{ site.baseurl }}/js/post.js?v={{ site.time | date: '%s' }}"></script>
 <script type="module" src="{{ site.baseurl }}/js/mermaid.js"></script>
 {% include fb-script.html %}
