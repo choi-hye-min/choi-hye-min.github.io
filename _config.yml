@@ -33,6 +33,7 @@ paginate_path: /page:num/
 
 # Tracker
 analytics: UA-131362480-1
+goatcounter: https://arthur.goatcounter.com/count
 
 # Comments
 disqus: yes

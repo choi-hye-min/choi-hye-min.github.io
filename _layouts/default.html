@@ -15,5 +15,8 @@ layout: compress
 {% include footer.html %}
 <script src="{{ site.baseurl }}/js/particle-network.js?v={{ site.time | date: '%s' }}"></script>
 {% if site.analytics %}{% include analytics.html %}{% endif %}
+{% if site.goatcounter %}
+<script data-goatcounter="{{ site.goatcounter }}" async src="//gc.zgo.at/count.js"></script>
+{% endif %}
 </body>
 </html>

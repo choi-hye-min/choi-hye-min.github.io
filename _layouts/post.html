@@ -10,6 +10,7 @@ layout: default
             <div class="post-meta">
                 <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y. %m. %d" }}</time>
                 {% if page.author %}<span itemprop="author">{{ page.author }}</span>{% endif %}
+                {% if site.goatcounter %}<span hidden data-goatcounter-endpoint="{{ site.goatcounter }}" data-goatcounter-path="{{ page.url | prepend: site.baseurl }}">조회수 <span data-goatcounter-count></span></span>{% endif %}
                 {% for tag in page.tags %}
                 <a class="tag-chip" href="{{ site.baseurl }}/tags/#tag-{{ tag | url_encode }}">{{ tag }}</a>
                 {% endfor %}

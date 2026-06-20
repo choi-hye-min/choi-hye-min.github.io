@@ -3,6 +3,27 @@
     var progress = document.querySelector('.reading-progress span');
     if (!article) return;
 
+    var viewCounter = document.querySelector('[data-goatcounter-endpoint][data-goatcounter-path]');
+    if (viewCounter) {
+        var endpoint = viewCounter.getAttribute('data-goatcounter-endpoint');
+        var path = viewCounter.getAttribute('data-goatcounter-path');
+        var counterUrl = new URL('/counter/' + encodeURIComponent(path) + '.json', endpoint);
+
+        fetch(counterUrl)
+            .then(function (response) {
+                if (response.status === 404) return { count: '0' };
+                if (!response.ok) throw new Error('GoatCounter request failed');
+                return response.json();
+            })
+            .then(function (data) {
+                viewCounter.querySelector('[data-goatcounter-count]').textContent = data.count;
+                viewCounter.hidden = false;
+            })
+            .catch(function () {
+                viewCounter.hidden = true;
+            });
+    }
+
     var headings = Array.prototype.slice.call(article.querySelectorAll('h2, h3'));
     var tocTargets = document.querySelectorAll('.toc-list');
 
