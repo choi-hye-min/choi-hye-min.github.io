@@ -4,27 +4,55 @@
             <span class="brand-mark" aria-hidden="true">A</span>
             <span>{{ site.title }}</span>
         </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-            <span class="sr-only">메뉴 열기</span>
-            <span></span><span></span><span></span>
-        </button>
-        <nav id="primary-navigation" class="primary-navigation" aria-label="주요 메뉴">
-            <a href="{{ site.baseurl }}/">Posts</a>
-            <a href="{{ site.baseurl }}/tags/">Tags</a>
-            <a href="{{ site.baseurl }}/about/">About</a>
-            <a href="{{ site.baseurl }}/search/">Search</a>
-        </nav>
+        <div class="header-actions">
+            <nav id="primary-navigation" class="primary-navigation" aria-label="주요 메뉴">
+                <a href="{{ site.baseurl }}/">Posts</a>
+                <a href="{{ site.baseurl }}/tags/">Tags</a>
+                <a href="{{ site.baseurl }}/about/">About</a>
+                <a href="{{ site.baseurl }}/search/">Search</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="테마 전환">
+                <span class="theme-icon theme-icon-sun" aria-hidden="true">&#9728;</span>
+                <span class="theme-icon theme-icon-moon" aria-hidden="true">&#9790;</span>
+            </button>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">메뉴 열기</span>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
 </header>
 <script>
     (function () {
         var button = document.querySelector('.nav-toggle');
         var navigation = document.querySelector('.primary-navigation');
-        if (!button || !navigation) return;
-        button.addEventListener('click', function () {
-            var isOpen = button.getAttribute('aria-expanded') === 'true';
-            button.setAttribute('aria-expanded', String(!isOpen));
-            navigation.classList.toggle('is-open', !isOpen);
-        });
+        var themeButton = document.querySelector('.theme-toggle');
+
+        if (button && navigation) {
+            button.addEventListener('click', function () {
+                var isOpen = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', String(!isOpen));
+                navigation.classList.toggle('is-open', !isOpen);
+            });
+        }
+
+        if (themeButton) {
+            var updateThemeButton = function (theme) {
+                var nextTheme = theme === 'dark' ? '라이트' : '다크';
+                themeButton.setAttribute('aria-label', nextTheme + ' 테마로 전환');
+            };
+
+            updateThemeButton(document.documentElement.getAttribute('data-theme'));
+            themeButton.addEventListener('click', function () {
+                var currentTheme = document.documentElement.getAttribute('data-theme');
+                var nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', nextTheme);
+                try {
+                    localStorage.setItem('theme', nextTheme);
+                } catch (error) {
+                }
+                updateThemeButton(nextTheme);
+            });
+        }
     }());
 </script>
