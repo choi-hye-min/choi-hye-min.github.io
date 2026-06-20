@@ -28,7 +28,7 @@ Stop and explain the missing prerequisite if `_docs/rule.md` cannot be found. Do
 3. Distinguish confirmed facts from inference. Do not invent links, APIs, version numbers, benchmarks, or quotations.
 4. Select the smallest suitable structure from `_docs/rule.md`: concept, implementation, comparison, or operations.
 5. Plan sections around reader questions rather than a feature inventory. Include practical perspectives from at least two relevant areas such as configuration, code, tests, operations, or failure handling.
-6. Prefer Kotlin for backend examples unless another language is more natural or the user requests it.
+6. Prefer Java for backend examples unless another language is more natural or the user requests it.
 
 ## Create or edit the post
 
