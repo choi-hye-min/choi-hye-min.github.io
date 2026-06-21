@@ -1,3 +1,11 @@
+@use "variables" as variables;
+
+$base-font-family: variables.$base-font-family;
+$base-font-size: variables.$base-font-size;
+$base-line-height: variables.$base-line-height;
+$brand-color: variables.$brand-color;
+$mono-font-family: variables.$mono-font-family;
+
 :root {
     color-scheme: light;
     --color-background: #f7f6f1;
