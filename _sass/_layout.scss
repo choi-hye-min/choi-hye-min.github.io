@@ -57,7 +57,28 @@ html {
     min-height: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 88px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba($brand-color, 0.44) transparent;
     background: $background-color;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: rgba($brand-color, 0.34);
+    background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($brand-color, 0.58);
 }
 
 body {
